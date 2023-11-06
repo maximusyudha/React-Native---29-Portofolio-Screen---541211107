@@ -1,9 +1,11 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image, ScrollView, ImageBackground } from 'react-native';
+import { View, Text, StyleSheet, Image, ScrollView, ImageBackground, Button } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 import backgroundImg from '../assets/backgroundhp.jpg';
 import { TouchableOpacity } from 'react-native';
 import { Linking } from 'react-native';
+import LikeDislikeButton from '../customlike/customLike';
+
 const IMG_URI = require('../assets/yudha.jpeg');
 
 const projects = [
@@ -70,6 +72,8 @@ export default function HomeScreen() {
         itemWidth={350}   
       />
 
+      <LikeDislikeButton />
+
       <View style={styles.buttonContainer}>
       <TouchableOpacity onPress={openLinkedInProfile} style={styles.linkedinButton}>
           <Text>LinkedIn</Text>
@@ -78,7 +82,6 @@ export default function HomeScreen() {
           <Text>GitHub</Text>
       </TouchableOpacity>
       </View>
-
     </View>
     </ImageBackground>
     </ScrollView>

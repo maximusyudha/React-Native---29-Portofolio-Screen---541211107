@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     marginBottom: 20,
     color: '#333',
-  },
+  },  
   input: {
     width: 300,
     height: 40,
